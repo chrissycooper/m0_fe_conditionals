@@ -100,15 +100,20 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log("play & treats", lovesToPlay && lovesTreats);
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log("play & park", lovesToPlay && lovesDogPark);
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log("play or park", lovesToPlay || lovesDogPark);
 
 // Determine if the dog loves to play and is a puppy
+if (age < 2 && lovesToPlay){
+    console.log("true, your dog loves to play and is a puppy!")
+} 
+
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
 // ANSWER:
+//My final line of code evaluated to true, which triggered the console log statement to print. the parentheses in the if statement is asking, "is the value of the variable "age" less than 2 and is the value of lovesToPlay true?". since age is set to 1 and 1 is less than 2, that half of the statement is true. We need the other half to also be true to move on, and lovesToPlay is set to true, so overall the statement evaluates to true.
